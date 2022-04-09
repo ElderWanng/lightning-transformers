@@ -9,4 +9,4 @@ cfg:
   use_stemmer: True
   val_target_max_length: 142
   num_beams: null
-  compute_generate_metrics: True
+  compute_generate_metrics: False
