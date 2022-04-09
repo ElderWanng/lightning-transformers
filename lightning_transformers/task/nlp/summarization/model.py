@@ -45,7 +45,7 @@ class SummarizationTransformer(Seq2SeqTransformer):
         self.log_dict(result, on_step=False, on_epoch=True)
 
     def configure_metrics(self, stage: str):
-        self.rouge = ROUGEScore(use_stemmer=self.cfg.use_stemmer)
+        self.rouge = ROUGEScore()
 
     @property
     def hf_pipeline_task(self) -> str:
